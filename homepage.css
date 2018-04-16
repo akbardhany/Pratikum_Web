@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 .space {
   padding: 20px;
+=======
+body {
+  background-color: yellow;
+}
+
+.space {
+  padding: 50px;
+>>>>>>> ba2e78bbbdc9080e8da3e234ea7aa720e5a14e45
   padding-top: 0.1px;
 }
 
@@ -14,7 +23,10 @@
 
 .font {
   font-family: cursive;
+<<<<<<< HEAD
   margin-top: auto;
+=======
+>>>>>>> ba2e78bbbdc9080e8da3e234ea7aa720e5a14e45
 }
 
 #menu {
@@ -29,8 +41,11 @@
   border: 0;
   margin-top: 10px;
 }
+<<<<<<< HEAD
 
 .center {
   font-family: cursive;
   text-align: center;
 }
+=======
+>>>>>>> ba2e78bbbdc9080e8da3e234ea7aa720e5a14e45
