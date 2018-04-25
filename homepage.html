@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width: device-width, initial-scale:1">
-    <title>Welcome to Our Store</title>
+    <title>Welcome to Our Homepage</title>
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="cheating/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cheating/css/animate.css">
     <script src="cheating/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body class="container">
     <!-- header -->
@@ -24,10 +27,12 @@
               <img src="icon/social/png/social-twitter.png" width="20" height="20" border="0">
               </a>
             </td>
+            <td>&nbsp;</td>
             <td><a href="#">
               <img src="icon/social/png/social-instagram.png" width="20" height="20" border="0">
               </a>
             </td>
+            <td>&nbsp;</td>
             <td><a href="#">
               <img src="icon/social/png/social-facebook.png" width="20" height="20" border="0">
               </a>
@@ -37,71 +42,60 @@
       </table>
     </div>
     <!-- social media finish -->
-    <br>
-    <br>
+
     <!-- welcome -->
-    <div class="font"><center>
-      <table>
-        <tr>
-          <td><h1>Welcome to Our Store!!</h1></td>
-        </tr>
-      </table>
+    <div class="row">
+      <div class="col-sm-12 font"><h1>Welcome !!</h1></div>
     </div>
     <!-- welcome finish -->
     <br>
     <br>
-    <!-- Body -->
-    <div id="menu">
-      <table class="nospace">
-        <tr>
-          <td align="center" valign="top" width="125" height="90"><a href="#">
-            <img src="image/vans.png" height="40" border="0">
-            </a>
-          </td>
-          <td align="center" valign="top" width="125" height="90"><a href="#">
-            <img src="image/adidas.png" height="50" border="0">
-            </a>
-          </td>
-          <td align="center" valign="top" width="125" height="90"><a href="#">
-            <img src="image/nike.png" height="40" border="0">
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td align="center" valign="top" width="125" height="100"><a href="#">
-            <img src="image/puma.png" height="80" border="0">
-            </a>
-          </td>
-          <td align="center" valign="top" width="125" height="100"><a href="#">
-            <img src="image/rebook.png" height="70" border="0">
-            </a>
-          </td>
-          <td align="center" valign="top" width="125" height="100 "><a href="#">
-            <img src="image/converse.png" height="70" border="0">
-            </a>
-          </td>
-        </tr>
+    <!-- Slide -->
 
-        <tr>
-          <td align="center" valign="top" width="125" height="90"><a href="#">
-            <img src="image/puma.png" height="80" border="0">
-            </a>
-          </td>
-          <td align="center" valign="top" width="125" height="90"><a href="#">
-            <img src="image/puma.png" height="80" border="0">
-            </a>
-          </td>
-          <td align="center" valign="top" width="125" height="90"><a href="#">
-            <img src="image/puma.png" height="80" border="0">
-            </a>
-          </td>
-        </tr>
-      </table>
+
+
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/lea.jpg" alt="Los Angeles" width="850" height="567">
+      </div>
+
+      <div class="item">
+        <img src="img/chain.jpg" alt="Chicago" width="850" height="567">
+      </div>
+
+      <div class="item">
+        <img src="img/flower.jpg" alt="New york" width="850" height="567">
+      </div>
     </div>
-      <!-- Menu Finish -->
-      <br>
-      <br>
-      <br>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+    <!-- Slide Finish -->
+      <div class="row">
+        <div class="col-sm-12 padding"></div>
+      </div>
       <!-- Footer -->
       <div class="row center">
         <div class="col-sm-2"></div>
@@ -113,5 +107,20 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-3">&copy;RocketIwak</div>
       </div>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <!--wow js-->
+      <script src="./js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+      <script>
+      if (new Date().getHours() < 18) {
+          document.getElementById("condition").innerHTML = "Have a nice Day!!";
+      }
+      </script>
   </body>
 </html>
